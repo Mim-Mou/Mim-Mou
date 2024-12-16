@@ -1,0 +1,14 @@
+n = int(input())
+arr = list(map(int, input().split()))
+mex = 0
+set=set()
+result=[]
+for i in arr:
+    set.add(i)
+    while mex in set:
+        mex+=1
+    result.append(mex)
+print(" ".join(map(str, result)))
+
+
+
